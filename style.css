@@ -1,0 +1,107 @@
+body{
+    background-color: lemonchiffon;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+/*Contains the screen and numpad*/
+#container{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    background-color:black;
+    border-radius: 2%;
+    border: 15px solid rgb(77, 77, 122);
+}
+/*Contains all the button groups*/
+#numpad{
+    flex-grow:3;
+    background-color:rgb(164, 199, 196);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 5px solid rgb(164, 199, 196);
+    
+}
+
+
+
+/*The screen of the calculator*/
+#screen{
+    flex-grow:1;
+    border: 10px solid rgb(164, 199, 196);
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 100px;
+    color:chartreuse;
+    font-family:Times;
+    
+   
+}
+
+/*Button groups and their buttons below*/
+#group1{
+ flex-grow: 1;
+ 
+ display: flex;
+}
+/*Group's 1 buttons(childern)*/
+#group1 > * {
+flex-grow: 1;
+font-size: x-large;
+flex-basis: 30px;
+}
+
+#group2{
+    flex-grow: 1; 
+    display: flex;
+}
+
+/*Group's 2 buttons(childern)*/
+#group2 > * {
+    flex-grow: 1;
+    font-size: x-large;
+    flex-basis: 30px;
+    }
+
+#group3{
+    flex-grow: 1; 
+    display: flex;
+}
+
+/*Group's 3 buttons(childern)*/
+#group3 > * {
+    flex-grow: 1;
+    font-size: x-large;
+    flex-basis: 30px;
+    }
+
+#group4{
+    flex-grow: 1; 
+    display: flex;
+}
+
+/*Group's 4 buttons(childern)*/
+#group4 > * {
+    flex-grow: 1;
+    font-size: x-large;
+    flex-basis: 30px;
+    }
+
+#group5{
+    flex-grow: 1; 
+    display: flex;
+}
+
+/*Group's 5 buttons(childern)*/
+#group5 > * {
+    flex-grow: 2;
+    font-size: x-large;
+    flex-basis: 30px;
+    }
+#group5 > #zero {
+    flex-grow: 5;
+}

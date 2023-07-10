@@ -51,13 +51,34 @@ const screen = document.getElementById('screen');
 function display(item){
  if(typeof item == 'number' && preDisplay == 0){
     console.log(item);
-
  }else if(typeof item == 'number' && preDisplay != 0){
+    // join the 2 numbers as strings and display them
     console.log(preDisplay.toString() + item.toString());
- }else if(typeof item != 'number' && preDisplay != 0){
-    //i need to display the minus sign if '-/+' is pressed or remove it.
-    //but what if '=' is pressed, then we need to display the result
-    // and if others like '+' are pressed similary
-    // if 'AC' is pressed then we just clear everything
+ }else if(item == '-/+' && preDisplay > 0){// preDisplay to number?
+    console.log('display minus sign');
+ }else if(item == '-/+' && preDisplay < 0){// preDisplay to number?
+    console.log('remove minus sign');
+ }else if(item == 'AC'){
+    console.log('clear screen')
+ }else if(item == '.'){
+    console.log(preDisplay.toString() + item.toString());
+ }
+ else if(item == '+'){
+    console.log('add the num on screen with the following');
+ }
+ else if(item == '-'){
+    console.log('subtrack the num on screen with the following');
+ }
+ else if(item == '*'){
+    console.log('multiply the num on screen with the following');
+ }
+ else if(item == '/'){
+    console.log('divide the num on screen with the following');
+ }
+ else if(item == '='){//...here we need more work
+    console.log('display result');
+ }
+ else if(item == '%'){
+    console.log('reminder of num on screen with the following');
  }
 }

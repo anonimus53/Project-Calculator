@@ -2,7 +2,9 @@ body{
     background-color: lemonchiffon;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 5%;
+    flex-direction: column;
 }
 
 /*Contains the screen and numpad*/
@@ -104,4 +106,44 @@ flex-basis: 30px;
     }
 #group5 > #zero {
     flex-grow: 5;
+}
+#ac {
+    color: brown;
+    font-size: xx-large;
+}
+#plus{
+  color:brown;
+  font-size:xx-large;
+}
+#minus{
+    color:brown;
+    font-size:xx-large;
+}
+#division{
+    color: brown;
+    font-size:xx-large;
+}
+#remnat{
+    color:brown;
+    font-size:xx-large;
+}
+#multi{
+    color: brown;
+    font-size:xx-large;
+}
+#sign{
+    color:goldenrod;
+    font-size:xx-large;
+}
+#ecualsign{
+    color:blue;
+    font-size:xx-large;
+}
+#dot{
+    color:black;
+    font-size:xx-large;
+}
+footer{
+    padding-top: 100px;
+    font-size: xx-large;
 }
